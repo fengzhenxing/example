@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="example" xmlns="http://karaf.apache.org/xmlns/features/v1.2.0">
+	<feature name="example" version="1.0.0">
+		<!-- Google Guava Library -->
+		<bundle start-level="80" start="true">mvn:com.google.guava/guava/18.0</bundle>
+
+		<!-- Wicket Library -->
+		<bundle start-level="80" start="true">mvn:org.apache.wicket/wicket-core/6.19.0</bundle>
+		<bundle start-level="80" start="true">mvn:org.apache.wicket/wicket-util/6.19.0</bundle>
+		<bundle start-level="80" start="true">mvn:org.apache.wicket/wicket-request/6.19.0</bundle>
+
+		<bundle start-level="80" start="true">mvn:com.ahamojo.www/example-dao-api/1.0-SNAPSHOT</bundle>
+		<bundle start-level="80" start="true">mvn:com.ahamojo.www/example-dao-impl/1.0-SNAPSHOT</bundle>
+		<bundle start-level="80" start="true">mvn:com.ahamojo.www/example-service-api/1.0-SNAPSHOT</bundle>
+		<bundle start-level="80" start="true">mvn:com.ahamojo.www/example-service-impl/1.0-SNAPSHOT</bundle>
+		<bundle start-level="80" start="true">mvn:com.ahamojo.www/example-web/1.0-SNAPSHOT</bundle>
+
+	</feature>
+</features>

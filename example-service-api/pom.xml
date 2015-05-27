@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ahamojo.www</groupId>
+		<artifactId>example</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>example-service-api</artifactId>
+	<name>example-service-api</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<packaging>bundle</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.annotation</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+	    <plugins>
+	      <plugin>
+	        <groupId>org.apache.felix</groupId>
+	        <artifactId>maven-bundle-plugin</artifactId>
+	        <extensions>true</extensions>
+	        <configuration>
+	          <instructions>
+	            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+	            <Bundle-Version>${project.version}</Bundle-Version>
+	            <Export-Package>
+	              com.ahamojo.www.example.service.*
+	            </Export-Package>
+	          </instructions>
+	        </configuration>
+	      </plugin>
+	    </plugins>
+  	</build>
+</project>

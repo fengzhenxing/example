@@ -1,0 +1,17 @@
+-exportcontents: \
+	com.ahamojo.www.example.template
+
+-wab: \
+	src/main/webapp
+
+#==========================
+Bundle-Name: example-web
+Bundle-SymbolicName: com.ahamojo.www.example-web
+Web-ContextPath:/
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+-exportcontents: \
+    com.ahamojo.www.example.commands
+
+Karaf-Commands:*
